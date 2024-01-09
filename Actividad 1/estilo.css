@@ -1,0 +1,32 @@
+
+#font1
+{
+    width: 400px;
+    height: 200px;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+}
+#font2
+{
+    width: 400px;
+    height: 400px;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+}
+#img{
+    transform: translate(-0%, 50%);
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    display: flex;
+}
