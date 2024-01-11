@@ -1,0 +1,106 @@
+body{
+    background-color: black;
+}
+#contenedor{
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    height: 800px;
+    margin-left: 30%;
+    
+
+}
+#menu{
+    background-color: #3a5c92e0;
+    width: 400px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+#menu-icono{
+    width: 30px;
+    height: 30px;
+    margin-left: 7px;
+    margin-top: 2px;
+}
+#titulo{
+    margin-left: 10px;
+    margin-top: 20px;
+}
+#tele{
+    width: 30px;
+    height: 30px;
+    margin-left: 30px;
+   border-radius: 100%;
+    background-color: #ffffff;
+}
+#bus{
+    width: 30px;
+    height: 30px;
+    margin-left: 150px;
+}
+
+#chats{
+    background-color:  rgb(255, 255, 255);
+    width: 400px;
+    height: auto;
+}
+#chat-icon{
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+#img-usuario{
+    margin-top: 1%;
+    margin-left: 2%;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+}
+#contenedor-info{
+    width: 300px;
+    height: 50px;
+    margin-left: 2%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+#text{
+    margin: 0.1px 0;
+}
+#fecha{
+    background-color: #ffffff;
+    height: 50px;
+    width: 50px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+#mensages{
+    background-color: #9b97975d;
+    border-radius: 80%;
+    height: 20px;
+    width: 20px;
+}
+hr{
+    border: none; 
+    border-top: 1px solid rgb(128, 128, 128);
+    margin: 10px 0;
+    padding: 0; 
+}
+#espacio{
+    background-color: #7b7b7b4c;
+    width: 400px;
+    height: 10px;
+}
+
+#contas{
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    height: 200px;
+}
+#tituloC{
+    margin-left: 10px;
+    color: #1125ff;
+}
