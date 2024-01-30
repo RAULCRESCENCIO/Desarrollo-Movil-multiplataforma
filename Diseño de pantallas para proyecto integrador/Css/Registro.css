@@ -1,0 +1,92 @@
+
+.d1 {
+    width: auto;
+    max-width: 470px;
+    margin: 50px auto;
+    padding: 2pc 1pc;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.3);
+  }
+  
+  h1 {
+    font-size: 2pc;
+    margin-bottom: 2pc;
+  }
+  
+  form {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en una nueva línea si no hay suficiente espacio */
+    justify-content: space-between; /* Distribuye los elementos a los lados */
+  }
+  
+  #divRegistro,
+  #divRegistro1 {
+    width: calc(48% - 10px); /* Establece un ancho para cada parte en la versión web y deja espacio entre ellas */
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 20px; /* Agrega margen inferior para separar las partes */
+  }
+  
+  form input {
+    width: 90%; /* Establece un ancho del 100% en dispositivos móviles y la versión web */
+    outline: none;
+    border: 1px solid white;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background: #e4e4e4;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  form input:hover {
+    transform: scale(1.1);
+  }
+  
+  #b {
+    width: 100%; /* Establece un ancho del 100% en dispositivos móviles y la versión web */
+    max-width: 400px;
+    margin-top: 20px;
+    padding: 10px 0;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+    background: rgb(17, 107, 143);
+    transition: transform 0.3s ease;
+  }
+  
+  input:invalid {
+    color: red;
+  }
+  
+  input:valid {
+    background-color: #e4e4e4;
+  }
+  img.img23{
+    width: 100px;
+  }
+  #Colonia,
+  #PreguntaSecreta{
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 30px;
+  
+  }
+  #bRegistro{
+    width: 100%;
+    padding: 18px 15px;
+    border-radius: 30px;
+    border: none;
+    background-color: #b4734c;
+    cursor: pointer;
+    color: white;
+    transition: transform 0.3s ease;
+  }
+  #bRegistro:hover{
+      border-radius: 30px;
+      border: none;
+      background-color: #9e5c41;
+      transform: scale(1.1); 
+  }

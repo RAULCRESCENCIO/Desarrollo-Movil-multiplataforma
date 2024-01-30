@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./Css/Menu.css">
+  <link rel="stylesheet" href="./Css/Registro.css">
+  <title>Perfil</title>
+</head>
+<body>
+  <center>
+
+    <div id="conteiner">
+     
+
+      <div id="menucontainer">
+        
+        <div id="menu">
+          <div id="icono-menu"><img src="./Img/menu-desplegable.png" alt="" id="imgmenu"></div>
+          <div id="menu-desplegable">
+            <div id="perfil">
+        
+                <div class="profile">
+                 <center>
+                    <img src="./Img/imgprincipal2.png" alt="Avatar"><br><br>
+            
+                    <h3>RAUL CRECENCIO HERNANDEZ</h3>
+                    <ul>
+                      <li><strong>Usuario:</strong> Raul </li>
+                      <li><strong>Correo Electronico:</strong> 20221038@uthh.edu.mx </li>
+                      <li><strong>Numero:</strong> 7711005436 </li>
+                      <li><strong>Ubicación:</strong> Ciudad, País</li>
+                    </ul>
+                  </center>
+                  </div>
+               
+            </div>
+            <ul id="opciones-menu">
+              <li><a href="./Inicio.html">Inicio</a></li>
+              <li><a href="./Registro.html">Registro</a></li>
+              <li><a href="./Login.html">Login</a></li>
+              <li><a href="./Editarperfil.html">Editar Perfil</a></li>
+              <li><a href="./Catalogo.html">Productos</a></li>
+              <li><a href="./Carrito.html">Carrito</a></li>
+              
+            </ul>
+          </div>
+        </div>
+
+        <h1 id="titulo">Los 2 <span> Pequeños</span> </h1> 
+      </div>
+
+      <link rel="stylesheet" href="estilosRegistroPublica.css">
+<!-- Google Web Fonts -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+<!-- Libraries Stylesheet -->
+<link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+<link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+<!-- Customized Bootstrap Stylesheet -->
+<link href="css/style.css" rel="stylesheet">
+<div class="d1">
+<form class="form" action="./?C=controladorlogin&M=registrar" method="POST" id="Registro">
+
+<div id="divRegistro1">
+<h2>REGISTRO</h2>
+      <center>
+      <img src="./Img/AgregarUsuario.png" alt="Imagen"  class="img23">
+      </center>
+
+      <label for="Nombre">Nombre:</label>
+      <input type="text" id="Nombre" name="txtNombre"  placeholder="Nombre del cliente"  maxlength="30" required><br>
+
+      <label for="Apaterno">Apellido Paterno:</label>
+      <input type="text" id="Apaterno" name="txtApaterno" placeholder="Apellido paterno"  maxlength="50" required><br>
+
+      <label for="Amaterno">Apellido Materno:</label>
+      <input type="text" id="Amaterno" name="txtAmaterno" placeholder="Apellido materno" pattern="[a-z-A-Z]+" maxlength="50"required><br>
+
+      <label for="Telefono">Telefono:</label>
+      <input type="number" id="Telefono" name="txtTelefono"  placeholder="Telefono"  minlength="10" maxlength="10" required><br>
+    
+      <label for="Colonia">Colonia:</label>
+      <select name="txtColonia" id="Colonia" required>
+            <option value="">Selecciona Tu Colonia</option>
+            <?php while($filas=$consultacolonia->fetch_object()){ ?>
+                <option value="<?php echo $filas->idcolonia; ?>"><?php echo $filas->colonia; ?></option>
+            <?php } ?>
+        </select><br><br>
+
+      <label for="txtCalle">Calle y NoCasa:</label>
+      <input type="text" id="Calle" name="txtCalle" placeholder="Calle y NoCasa" required><br>
+
+      
+</div>
+
+
+<div id="divRegistro">
+
+<label for="CorreoE">Correo Electronico:</label>
+      <input type="email" id="CorreoE" name="txtCorreoE" placeholder="Correo Electronico" required><br>
+                
+      <label for="usuario">Usuario:</label>
+      <input type="text" id="usuario" name="txtusuario" placeholder="Usuario" pattern="[a-z-A-Z-0-9]" maxlength="20" required><br>
+
+      <label for="PreguntaSecreta">Pregunta Secreta:</label>
+      <select name="txtPreguntaSecreta" id="PreguntaSecreta" required>
+            <option value="">Selecciona Tu Pregunta</option>
+            <?php while($filas=$consultaPreguntas->fetch_object()){ ?>
+                <option value="<?php echo $filas->tipoPregunta; ?>"><?php echo $filas->tipoPregunta; ?></option>
+            <?php } ?>
+      </select><br><br>
+
+      <label for="Respuesta">Respuesta a la pregunta:</label>
+      <input type="text" id="Respuesta" name="txtrespuesta" placeholder="Respuesta a la Pregunta Secreta"required><br>
+
+      <label for="password">Contraseña:</label>
+      <input type="password" id="password" name="txtpassword" placeholder="Cotraseña" minlength="8"  required><br>
+
+      <label for="password2">Confirma Contraseña:</label>
+      <input type="password" id="password2" name="txtpassword2" placeholder="Cotraseña" minlength="8" required><br>
+   
+      <button type="submit" id="bRegistro" onclick="Validar()">REGISTRAR</button>
+</div>
+
+
+  </form>
+  </div>
+
+
+    
+    </div>
+  </center>
+
+  <script> 
+    document.addEventListener('DOMContentLoaded', function () {
+      const iconoMenu = document.getElementById('icono-menu');
+      const menuDesplegable = document.getElementById('menu-desplegable');
+    
+      // Mostrar u ocultar el menú desplegable al hacer clic en el icono
+      iconoMenu.addEventListener('click', function (event) {
+        event.stopPropagation(); // Evitar que el clic en el icono cierre el menú (por burbujeo)
+        toggleMenu();
+      });
+    
+      // Ocultar el menú desplegable al hacer clic en cualquier lugar fuera del menú
+      document.addEventListener('click', function (event) {
+        const estaDentroDelMenu = menuDesplegable.contains(event.target);
+        
+        if (!estaDentroDelMenu && menuDesplegable.style.display === 'block') {
+          toggleMenu();
+        }
+      });
+    
+      function toggleMenu() {
+        // Alternar la visibilidad del menú desplegable
+        menuDesplegable.style.display = (menuDesplegable.style.display === 'block') ? 'none' : 'block';
+      }
+    });
+    
+      
+</script>
+
+</body>
+</html>

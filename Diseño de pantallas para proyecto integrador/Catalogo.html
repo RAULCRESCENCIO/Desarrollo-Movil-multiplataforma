@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./Css/Menu.css">
+  <link rel="stylesheet" href="./Css/categoria.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <title>Perfil</title>
+</head>
+<body>
+  <center>
+
+    <div id="conteiner">
+     
+
+      <div id="menucontainer">
+        
+        <div id="menu">
+          <div id="icono-menu"><img src="./Img/menu-desplegable.png" alt="" id="imgmenu"></div>
+          <div id="menu-desplegable">
+            <div id="perfil">
+        
+                <div class="profile">
+                 <center>
+                    <img src="./Img/imgprincipal2.png" alt="Avatar"><br><br>
+            
+                    <h3>RAUL CRECENCIO HERNANDEZ</h3>
+                    <ul>
+                      <li><strong>Usuario:</strong> Raul </li>
+                      <li><strong>Correo Electronico:</strong> 20221038@uthh.edu.mx </li>
+                      <li><strong>Numero:</strong> 7711005436 </li>
+                      <li><strong>Ubicación:</strong> Ciudad, País</li>
+                    </ul>
+                  </center>
+                  </div>
+               
+            </div>
+            <ul id="opciones-menu">
+              <li><a href="./Inicio.html">Inicio</a></li>
+              <li><a href="./Registro.html">Registro</a></li>
+              <li><a href="./Login.html">Login</a></li>
+              <li><a href="./Editarperfil.html">Editar Perfil</a></li>
+              <li><a href="./Catalogo.html">Productos</a></li>
+              <li><a href="./Carrito.html">Carrito</a></li>
+              
+            </ul>
+          </div>
+        </div>
+
+        <h1 id="titulo">Los 2 <span> Pequeños</span> </h1> 
+      </div>
+
+    <div class="search-container">
+        <input type="text" placeholder="Buscar...">
+        <button class="search-button">
+    <i class="fas fa-search"></i>
+        </button>
+    <div class="filt">
+    <label class="filtrar" for="categoria">Filtrar por:</label>
+    <select id="categoria" name="categoria">
+        <option class="filtrar" value="todos">Todos</option>
+        <option class="filtrar" value="panes">Panes</option>
+        <option class="filtrar" value="pan_dulce">Pan Dulce</option>
+        <option class="filtrar" value="pan_agua">Pan de Agua</option>
+        <option class="filtrar" value="pan_salado">Pan Salado</option>
+    </select>
+    </div>
+</div>
+    <div id="tarjeta-catalogo">
+
+        <div class="producto-card">
+            <img src="./Img/bolillo.jpg" alt="">
+            <h4 class="small-text">Bolillo</h4>
+            <p class="small-text">Tipo De Harina: Harina Integral</p>
+            <p class="small-text">Precio: 6 pesos</p>
+            <button id="buton" class="small-text">Comprar</button>
+        </div>
+
+        <div class="producto-card">
+            <img src="./Img/Croisaants.jpg" alt="">
+            <h4 class="small-text">Croissants</h4>
+            <p class="small-text">Tipo De Harina: Harina Integral</p>
+            <p class="small-text">Precio: 5 pesos</p>
+            <button id="buton" class="small-text">Comprar</button>
+        </div>
+
+        <div class="producto-card">
+            <img src="./Img/teleras.jpg" alt="">
+            <h4>Teleras</h4>
+            <p>Tipo De Harina: Harina Integral</p>
+            <p>Precio: 6 pesos</p>
+            <button id="buton" class="small-text">Comprar</button>
+        </div>
+
+        <div class="producto-card">
+            <img src="./Img/panCaja.jpg" alt="">
+            <h4>Pan De Caja</h4>
+            <p>Tipo de Harina: Harina De Soya</p>
+            <p>Precio: 24 pesos</p>
+            <button id="buton" class="small-text">Comprar</button>
+        </div>
+
+    </div>
+
+
+    
+    </div>
+  </center>
+
+  <script> 
+    document.addEventListener('DOMContentLoaded', function () {
+      const iconoMenu = document.getElementById('icono-menu');
+      const menuDesplegable = document.getElementById('menu-desplegable');
+    
+      // Mostrar u ocultar el menú desplegable al hacer clic en el icono
+      iconoMenu.addEventListener('click', function (event) {
+        event.stopPropagation(); // Evitar que el clic en el icono cierre el menú (por burbujeo)
+        toggleMenu();
+      });
+    
+      // Ocultar el menú desplegable al hacer clic en cualquier lugar fuera del menú
+      document.addEventListener('click', function (event) {
+        const estaDentroDelMenu = menuDesplegable.contains(event.target);
+        
+        if (!estaDentroDelMenu && menuDesplegable.style.display === 'block') {
+          toggleMenu();
+        }
+      });
+    
+      function toggleMenu() {
+        // Alternar la visibilidad del menú desplegable
+        menuDesplegable.style.display = (menuDesplegable.style.display === 'block') ? 'none' : 'block';
+      }
+    });
+    
+      
+</script>
+
+</body>
+</html>

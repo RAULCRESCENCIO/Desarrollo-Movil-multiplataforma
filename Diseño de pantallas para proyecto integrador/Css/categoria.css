@@ -1,0 +1,190 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000; 
+}
+
+#IdTarjetaPantalla {
+    background-color: #ffffff; 
+    padding: 0px;
+    margin: 0 auto; 
+    width: 70%; /* Puedes ajustar el porcentaje para cambiar la longitud */
+    max-width: 350px; 
+    height:620px; /* Puedes ajustar la altura según tus necesidades */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color:white; /* Ajusta el color de fondo según tus preferencias */
+    color: rgb(0, 0, 0);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); 
+}
+
+h1 span {
+    color: #8B4513; 
+}
+
+select {
+    padding: 2px;
+}
+
+#tarjeta-catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.producto-card {
+    background-color: #fca24ec7; 
+    color: white; 
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: 30%;
+    max-width: 140px;
+    padding: 8px;
+    text-align: center;
+}
+
+.producto-card img {
+    width: 60%;
+    height: 70px; /* Set a fixed height for the images */
+    object-fit: cover; /* Ensure images maintain aspect ratio and cover the container */
+    border-radius: 8px;
+}
+
+.producto-card h4 {
+    margin: 8px 0; 
+    color: #000;
+}
+
+#buton {
+    background-color: #573e1f97;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+}
+.producto-card p {
+    font-size: 11px; 
+      color: #000;
+}
+
+.producto-card h4 {
+    font-size: 11px; /* Ajusta el tamaño de fuente según tus preferencias */
+}
+
+#buton {
+    font-size: 10px; /* Ajusta el tamaño de fuente según tus preferencias */
+}
+.filtrar{
+    font-size: 12px;
+}
+.filt {
+    display: flex;
+    justify-content: end;
+    margin-right: 20px; /* Ajusta el margen según tus preferencias */
+    margin-left: 20px; /* Puedes ajustar el valor según tus necesidades */
+    margin-top: 10px;
+}
+.search-container {
+    display: flex;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-right: 10px; /* Ajusta el margen según tus preferencias */
+    margin-left: 10px; /* Puedes ajustar el valor según tus necesidades */
+    margin-top: 10px;
+}
+
+input {
+    border: 1px solid #000;
+    padding: 10px;
+    width: 90px;
+    border-radius: 5px 0 0 5px;
+  
+}
+
+button {
+    border: none;
+    padding: 6px;
+    background-color: #8a654e; /* Café más oscuro para el botón */
+    color: white;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+}
+
+button i {
+    font-size: 18px;
+}
+.opciones-btn {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.linea {
+    width: 20px;
+    height: 3px;
+    background-color: #000;
+    margin: 3px 0;
+}
+
+.sesion-card {
+    background-color: #fca24ec7; 
+    color: white; 
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: 30%;
+    max-width: 140px;
+    padding: 8px;
+    text-align: center;
+}
+#sesion-card {
+    background-color: #ffffffc7;
+    color: rgb(0, 0, 0);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px 25px; /* Centra horizontalmente con margen automático */
+    width: 80%; /* Puedes ajustar el ancho según tus necesidades */
+    max-width: 250px;
+    padding: 20px;
+    height: 400px; /* Puedes ajustar la altura según tus necesidades */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px; /* Ajusta el valor según tus necesidades */
+}
+
+
+
+.loginimg{
+        width: 50px; /* Ajusta el tamaño de la imagen según tus preferencias */
+        border-radius: 50%; /* Para hacer la imagen redonda */
+}
+.inpulogin {
+    border: 1px solid #000;
+    padding: 10px;
+    border-radius: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+.labellogin{
+    display: block;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
